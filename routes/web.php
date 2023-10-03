@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\DatabaseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +23,12 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::get('/test-connection', [DatabaseController::class, 'testConnection']);
+
 Route::get('/form', [FormController::class, 'index']);
 
 Route::post('/form', [FormController::class, 'show']);
 
-Route::get('/results', [FormController::class, 'result']);
+Route::get('/formData', [FormController::class, 'viewFormData']);
+
+Route::get('/result', [FormController::class, 'result']);

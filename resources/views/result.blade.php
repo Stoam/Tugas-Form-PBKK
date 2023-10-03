@@ -21,18 +21,16 @@
     rel="stylesheet"
     />
 </head>
-<body class="">
-    <div class="">
+<body>
+    <div class="container">
+        @foreach($results as $key => $result)
+        {{-- @if ($loop->last)
+        <img src="{{ asset('storage/images/'.$result) }}" style="height: 300px; width: 300px">
+        @endif --}}
         <div class="">
-            @foreach($results as $key => $results)
-            @if ($loop->last)
-            <img src="{{ asset('storage/images/'.$result) }}" style="height: 300px; width: 300px">
-            @endif
-            <div class="">
-                <a>
-                    {{ $key }} = {{ $result }}
-                </a>
-            </div>
+            <a>
+                {{ $key }} = {{ $result }}
+            </a>
         </div>
         @endforeach
         @if (session('status'))
@@ -41,7 +39,6 @@
         </div>
         @endif
     </div>
-    <!-- MDB -->
     <script
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"

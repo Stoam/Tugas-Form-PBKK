@@ -21,8 +21,8 @@
     rel="stylesheet"
     />
 </head>
-<body>
-    <section class="vh-100" style="background-color: #2779e2;">
+<body class="vh-100" style="background-color: #2779e2;">
+    {{-- <section class="vh-100" style="background-color: #2779e2;"> --}}
         <div class="container h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-xl-9">
@@ -84,9 +84,9 @@
                                         </div>
                                     </div>
                                     
-                                    <hr class="mx-n3">
+                                    {{-- <hr class="mx-n3"> --}}
 
-                                    <div class="row align-items-center py-3">
+                                    {{-- <div class="row align-items-center py-3">
                                         <div class="col-md-3 ps-5">
                                           <h6 class="mb-0">Upload Image</h6>
                                         </div>
@@ -97,7 +97,7 @@
                                             @enderror
                                             <div class="small text-muted mt-2">Upload your image in .png, .jpg, or .jpeg (Max Size: 2MB)</div>
                                         </div>
-                                    </div>
+                                    </div> --}}
         
                                     <hr class="mx-n3">
         
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    {{-- </section> --}}
     <!-- MDB -->
     <script
     type="text/javascript"
